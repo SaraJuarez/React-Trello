@@ -1,7 +1,9 @@
 import React from 'react';
 import List from './List';
 
-function Board() {
+function Board(props) {
+  console.log(props);
+
   const renderNewListButton = () => {
     return (
       <div>
@@ -13,7 +15,7 @@ function Board() {
   };
   return (
     <main className='app-board d-flex flex-nowrap'>
-      <List />
+      <List info={props.info} />
       {renderNewListButton()}
     </main>
   );

@@ -1,21 +1,11 @@
-// import React from 'react';
+'user strict';
 
+const getDataFromApi = () => {
+  return fetch('./board.json').then(function (response) {
+    return response.json();
+  });
+};
 
-
-// ¿POR QUÉ NO HAY QUE HACER FETCH?
-
-// let info = {};
-// let infoArray = new Array();
-
-// const getDataFromApi = () => {
-//     fetch('./board.json')
-//         .then(function (response) {
-//             return response.json();
-//         })
-//         .then(function (data) {
-//             info = data;
-//             console.log(info)
-
-//         })
-// }
-// export default getDataFromApi;
+export default {
+  getDataFromApi,
+};

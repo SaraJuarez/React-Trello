@@ -1,9 +1,8 @@
 import React from 'react';
 import Card from './Card';
-function List() {
-  const handleTitleList = (ev) => {
-    let newListTitle = ev.currentTarget.value;
-  };
+function List(props) {
+  console.log(props);
+  const handleTitleList = (ev) => {};
 
   const handleDeleteBtn = () => {};
   const handleLeftBtn = () => {};
