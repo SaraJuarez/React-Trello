@@ -2,92 +2,68 @@
   "board": {
     "list": [
       {
+        "id": 1,
         "title": "Backlog",
         "cards": [
           {
             "id": "1",
             "title": "Publicar en GitHub Pages",
             "description": "Lorem ipsum dolor sit amet",
-            "tags": [
-              "JS",
-              "Css",
-              "Html"
-            ]
+            "tags": ["JS", "Css", "Html"]
           }
         ]
       },
       {
+        "id": 2,
         "title": "Por hacer",
         "cards": [
           {
             "id": "2",
             "title": "Unificar funcionalidad",
             "description": "Lorem ipsum dolor sit amet",
-            "tags": [
-              "JS",
-              "Css",
-              "Html"
-            ]
+            "tags": ["JS", "Css", "Html"]
           },
           {
             "id": "3",
             "title": "Pintar el DOM",
             "description": "Lorem ipsum dolor sit amet",
-            "tags": [
-              "JS",
-              "Css",
-              "Html"
-            ]
+            "tags": ["JS", "Css", "Html"]
           }
         ]
       },
       {
+        "id": 3,
         "title": "Haciendo",
         "cards": [
           {
             "id": "4",
             "title": "Escuchar eventos",
             "description": "Lorem ipsum dolor sit amet",
-            "tags": [
-              "JS",
-              "Css",
-              "Html"
-            ]
+            "tags": ["JS", "Css", "Html"]
           }
         ]
       },
       {
+        "id": 4,
         "title": "Hecho",
         "cards": [
           {
             "id": "5",
             "title": "Manipular datos",
             "description": "Lorem ipsum dolor sit amet",
-            "tags": [
-              "JS",
-              "Css",
-              "Html"
-            ]
+            "tags": ["JS", "Css", "Html"]
           },
           {
             "id": "6",
             "title": "Guardar los datos en local storage",
             "description": "Lorem ipsum dolor sit amet",
-            "tags": [
-              "JS",
-              "Css",
-              "Html"
-            ]
+            "tags": ["JS", "Css", "Html"]
           },
           {
             "id": "7",
             "title": "Obtener datos del API",
             "description": "Lorem ipsum dolor sit amet",
-            "tags": [
-              "JS",
-              "Css",
-              "Html"
-            ]
+            "tags": ["JS", "Css", "Html"]
           }
         ]
       }

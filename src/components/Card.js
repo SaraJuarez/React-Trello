@@ -1,20 +1,20 @@
 import React from 'react';
 
-function Card() {
+function Card(props) {
+  let tags = props.info.tags.map((tag) => (
+    <span key={tag} className='badge badge-secondary bg-success mr-1'>
+      {tag}
+    </span>
+  ));
+
   const renderTags = () => {
-    return (
-      <div>
-        <span className='badge badge-secondary bg-success mr-1'>JS</span>
-        <span className='badge badge-secondary bg-success mr-1'>Css</span>
-        <span className='badge badge-secondary bg-success mr-1'>Html</span>
-      </div>
-    );
+    return <div>{tags}</div>;
   };
 
   const renderCardTitle = () => {
     return (
       <div>
-        <h3 className='h6'>Publicar en GitHub Pages</h3>
+        <h3 className='h6'>{props.info.title}</h3>
       </div>
     );
   };

@@ -25,10 +25,14 @@ function App() {
     setTextFilter(textFilter);
   };
 
+  const handleTitleList = (ev) => {
+    console.log(ev.currentTarget);
+  };
+
   return (
     <div className='app'>
       <Header toggleMenu={toggleMenu} textFilter={textFilter} handleFilter={handleFilter} />
-      <Board info={info} />
+      <Board handleTitleList={handleTitleList} info={info} />
       <Menu isMenuOpen={isMenuOpen} />
       <Edit />
     </div>

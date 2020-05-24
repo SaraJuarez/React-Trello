@@ -2,7 +2,12 @@ import React from 'react';
 import List from './List';
 
 function Board(props) {
-  console.log(props);
+  let lists = [];
+  if (props.info.length != 0) {
+    lists = props.info.board.list.map((list) => <List handleTitleList={props.handleTitleList} info={list} id={list.id} key={list.id} />);
+  } else {
+    console.log('no hay info');
+  }
 
   const renderNewListButton = () => {
     return (
@@ -15,7 +20,7 @@ function Board(props) {
   };
   return (
     <main className='app-board d-flex flex-nowrap'>
-      <List info={props.info} />
+      {lists}
       {renderNewListButton()}
     </main>
   );

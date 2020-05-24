@@ -2,15 +2,20 @@ import React from 'react';
 import Card from './Card';
 function List(props) {
   console.log(props);
-  const handleTitleList = (ev) => {};
+
+  const handleTitleList = (ev) => {
+    props.handleTitleList();
+  };
 
   const handleDeleteBtn = () => {};
   const handleLeftBtn = () => {};
   const handleRightBtn = () => {};
   const handleAddNewCard = () => {};
 
+  let cards = props.info.cards.map((card) => <Card info={card} key={card.id} id={card.id} />);
+
   const renderTitleList = () => {
-    return <input className='app-list-input form-control form-control-sm' placeholder='Tareas importantes' type='text' value='Backlog' title='Editar el título de la lista' onChange={handleTitleList} />;
+    return <input className='app-list-input form-control form-control-sm' placeholder='Tareas importantes' type='text' value={props.info.title} title='Editar el título de la lista' onChange={handleTitleList} />;
   };
 
   const renderEllipsis = () => {
@@ -64,7 +69,7 @@ function List(props) {
             </div>
           </div>
         </form>
-        <Card />
+        {cards}
         {renderNewCardBtn()}
       </div>
     </div>
